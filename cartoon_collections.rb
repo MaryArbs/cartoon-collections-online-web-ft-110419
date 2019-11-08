@@ -1,5 +1,6 @@
-array=["Doc", "Dopey", "Bashful", "Grumpy"]
+
 def roll_call_dwarves(names)
+  array=[]
 array.each.with_index(1) do |name,index|
 puts "#{index}. #{name}"
 end
