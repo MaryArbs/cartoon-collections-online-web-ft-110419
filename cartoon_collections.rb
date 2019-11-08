@@ -10,7 +10,13 @@ array.map { |name| name.capitalize + "!"}
 end
 
 def long_planeteer_calls(array)
-  array.includee? {|word| word.length>4}
+  array.select {|word| word.length>4}
+    if array.include?(true)
+      true
+    else 
+     false
+     end 
+    
 end
 
 
