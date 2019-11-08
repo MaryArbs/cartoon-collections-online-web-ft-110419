@@ -5,8 +5,9 @@ puts "#{index}. #{name}"
 end
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def summon_captain_planet(array)
+array = ["earth", "wind", "fire", "water", "heart"]
+array.map { |name| name.capitalize + "!"}
 end
 
 def long_planeteer_calls# code an argument here
