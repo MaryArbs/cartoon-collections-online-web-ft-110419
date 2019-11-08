@@ -11,17 +11,12 @@ end
 
 def long_planeteer_calls(array)
   i=0
-block_return_values=[]
-while array.select {|word| word.length>4}
-block_return_values << yield (array[i])
-i = i + 1
-end
-  if array.include?(false)
-    false
-  else
-   true
-   end
-end
+  if  array.any? {|i| i.length > 4}
+    return true
+  else 
+    return false
+  i = i + 1
+  end 
 
 
 def find_the_cheese# code an argument here
