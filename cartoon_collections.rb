@@ -10,13 +10,17 @@ array.map { |name| name.capitalize + "!"}
 end
 
 def long_planeteer_calls(array)
-  array.select {|word| word.length<4}
-    if array.include?(false)
-      false
-    else
-     true
-     end
-
+  i=0
+block_return_values=[]
+while array.select {|word| word.length>4}
+block_return_values << yield (array[i])
+i = i + 1
+end 
+  if array.include?(false)
+    false
+  else 
+   true
+   end 
 end
 
 
