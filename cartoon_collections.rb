@@ -1,5 +1,4 @@
-
-def roll_call_dwarves(names)
+def roll_call_dwarves(array)
 index=0
 array.each.with_index(1) do |name,index|
 puts "#{index}. #{name}"
