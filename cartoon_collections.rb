@@ -6,7 +6,6 @@ end
 end
 
 def summon_captain_planet(array)
-array = ["earth", "wind", "fire", "water", "heart"]
 array.map { |name| name.capitalize + "!"}
 end
 
